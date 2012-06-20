@@ -22,6 +22,8 @@ from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
 from django.test import TestCase
 from django.test.client import Client
+import unittest
+from netaddr import*
 
 from models import Host, Network
 from netadmin.permissions.utils import user_has_access, user_can_edit, \
